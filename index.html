@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onça Pintada | Links</title>
+<meta name="description" content="Onça Pintada — alfaiataria feminina. Selvagem na essência, elegante na atitude.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --preto:#0B0B0B; --preto2:#151311; --ouro:#DAC564; --ouro-esc:#B89B3E;
+    --creme:#F6F1E7; --areia:#E9DFCB; --texto:#1A1612;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(11,11,11,.72),rgba(11,11,11,.72)),url(img/pele-onca.jpg) center/cover no-repeat}
+  body{background:#0B0B0B;font-family:Montserrat,sans-serif;color:var(--texto);min-height:100vh;display:flex;justify-content:center}
+  .pagina{width:100%;max-width:440px;background:var(--creme);box-shadow:0 0 40px rgba(0,0,0,.5)}
+  a{text-decoration:none}
+
+  /* topo */
+  .topo{background:var(--preto);padding:44px 28px 36px;text-align:center;position:relative}
+  .ponto{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--ouro)}
+  .p1{top:14px;left:14px}.p2{top:14px;right:14px}.p3{bottom:14px;left:14px}.p4{bottom:14px;right:14px}
+  .local{font-size:9px;letter-spacing:.32em;color:var(--ouro);text-transform:uppercase;margin-bottom:18px}
+  .logo{width:78%;max-width:300px;display:block;margin:0 auto 14px}
+  .slogan{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#e8ddc0;margin-bottom:26px}
+  .btn{display:block;width:100%;padding:14px 10px;margin:10px 0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;text-align:center;transition:.2s}
+  .btn-ouro{background:var(--ouro);color:var(--preto)}
+  .btn-linha{border:1px solid var(--ouro);color:var(--ouro)}
+  .btn:hover{opacity:.85;transform:translateY(-1px)}
+
+  /* vendedoras */
+  .vendas{background:var(--preto2);border-top:1px solid #2b2620;display:flex;gap:18px;align-items:center;padding:34px 26px}
+  .vendas .txt{flex:1}
+  .vendas h2{font-family:Cinzel,serif;font-weight:400;font-size:22px;line-height:1.15;color:var(--ouro);letter-spacing:.04em;margin-bottom:8px}
+  .vendas p{font-size:11.5px;line-height:1.55;color:#cfc6b3;margin-bottom:14px}
+  .vendas .simbolo{width:92px;flex-shrink:0;opacity:.95}
+  .zap{display:flex;align-items:center;gap:10px;background:var(--creme);color:var(--preto);padding:10px 12px;margin:8px 0;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+  .zap svg{width:16px;height:16px;flex-shrink:0}
+
+  /* faixa da pele */
+  .pele{background:url(img/pele-onca.jpg) center/cover;padding:30px 34px;position:relative}
+  .pele .btn-pele{display:block;background:rgba(246,241,231,.94);border:1px solid var(--preto);color:var(--preto);text-align:center;padding:13px 10px;margin:12px 0;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+
+  /* frete */
+  .frete{position:relative;padding:92px 26px 34px;text-align:center}
+  .fita{position:absolute;top:0;left:22px;background:var(--preto);color:var(--ouro);font-size:8.5px;letter-spacing:.18em;line-height:1.5;text-transform:uppercase;padding:12px 10px 18px;text-align:center;clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%)}
+  .frete .grande{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:42px;color:var(--ouro-esc);line-height:1}
+  .frete .sub{font-family:Cinzel,serif;font-size:19px;letter-spacing:.06em;margin:4px 0 14px}
+  .frete small{display:block;font-size:10.5px;letter-spacing:.1em;color:#6b6152;margin-bottom:16px}
+  .frete .btn{display:inline-block;width:auto;padding:11px 26px;background:var(--preto);color:var(--ouro);margin:0}
+
+  /* rodapé */
+  .rodape{background:var(--preto);text-align:center;padding:26px 20px 22px}
+  .rodape .titulo{font-size:10px;letter-spacing:.3em;color:#d8cfbb;text-transform:uppercase;margin-bottom:16px}
+  .rodape .titulo b{color:var(--ouro)}
+  .redes{display:flex;justify-content:center;gap:16px;margin-bottom:20px}
+  .redes a{width:40px;height:40px;border-radius:50%;background:var(--ouro);display:flex;align-items:center;justify-content:center}
+  .redes svg{width:19px;height:19px;fill:var(--preto)}
+  .credito{font-size:9px;letter-spacing:.12em;color:#7d7566}
+  .credito a{color:#a59a82}
+
+  img{max-width:100%;height:auto}
+  /* tablet */
+  @media (min-width:600px){
+    body{padding:32px 16px;align-items:flex-start}
+    .pagina{max-width:560px;border-radius:4px;overflow:hidden}
+    .topo{padding:54px 48px 44px}
+    .vendas{padding:40px 44px}
+    .vendas h2{font-size:26px}
+    .pele{padding:36px 56px}
+    .btn,.pele .btn-pele{font-size:12.5px;padding:16px 12px}
+    .zap{font-size:12px;padding:12px 14px}
+  }
+  /* PC */
+  @media (min-width:1000px){
+    body{padding:48px 32px;align-items:center}
+    .pagina{max-width:1080px;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"topo vendas" "topo pele" "topo frete" "rodape rodape"}
+    .topo{grid-area:topo;display:flex;flex-direction:column;justify-content:center;padding:64px 64px}
+    .topo .logo{max-width:340px}
+    .slogan{font-size:21px}
+    .vendas{grid-area:vendas;border-top:0;padding:40px 48px}
+    .pele{grid-area:pele;padding:28px 56px}
+    .pele .btn-pele{margin:10px 0}
+    .frete{grid-area:frete;padding:72px 40px 32px}
+    .rodape{grid-area:rodape;display:flex;align-items:center;justify-content:space-between;padding:22px 48px;text-align:left}
+    .rodape .titulo,.redes{margin-bottom:0}
+  }
+</style>
+</head>
+<body>
+<main class="pagina">
+
+  <section class="topo">
+    <span class="ponto p1"></span><span class="ponto p2"></span><span class="ponto p3"></span><span class="ponto p4"></span>
+    <p class="local">Alfaiataria feminina</p>
+    <img class="logo" src="img/logo.png" alt="Onça Pintada">
+    <p class="slogan">Selvagem na essência, elegante na atitude.</p>
+    <a class="btn btn-ouro" href="https://www.oncapintadaoficial.com.br">Compre no site</a>
+    <a class="btn btn-linha" href="https://www.instagram.com/onca.pintadaoficial/">Instagram</a>
+    <a class="btn btn-linha" href="https://www.tiktok.com/@lojaoncapintadaa">TikTok</a>
+    <a class="btn btn-ouro" href="https://chat.whatsapp.com/LTMdAMaAXCbK6HkrjVPAJ3">Entre no Grupo VIP</a>
+  </section>
+
+  <section class="vendas">
+    <div class="txt">
+      <h2>Fale com nossa equipe</h2>
+      <p>Tire dúvidas de tamanho, cor e disponibilidade direto pelo WhatsApp.</p>
+      <!-- TROCAR: número de cada vendedor(a) (formato 55 + DDD + número) -->
+      <a class="zap" href="https://wa.me/5561992224423?text=Oi!%20Vim%20pelo%20Instagram%20da%20On%C3%A7a%20Pintada%20%F0%9F%90%86"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Gaby Alves</a>
+      <a class="zap" href="https://wa.me/5561998105050?text=Oi!%20Vim%20pelo%20Instagram%20da%20On%C3%A7a%20Pintada%20%F0%9F%90%86"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Rafael</a>
+    </div>
+    <img class="simbolo" src="img/simbolo.png" alt="">
+  </section>
+
+  <section class="pele">
+    <a class="btn-pele" href="https://www.oncapintadaoficial.com.br">Novidades da coleção</a>
+    <a class="btn-pele" href="https://www.oncapintadaoficial.com.br/quem-somos/">Nossa história</a>
+    <a class="btn-pele" href="https://www.google.com/maps/search/?api=1&query=Quadra%2054%20lote%2022%20loja%2001%20Centro%2C%20Santo%20Ant%C3%B4nio%20do%20Descoberto%20-%20GO">Visite a loja física</a>
+  </section>
+
+  <section class="frete">
+    <div class="fita">Envio<br>para todo<br>o Brasil</div>
+    <p class="grande">Frete grátis</p>
+    <p class="sub">acima de R$499</p>
+    <small>Pedidos enviados em até 1 dia útil</small>
+    <a class="btn" href="https://www.oncapintadaoficial.com.br">Comprar agora</a>
+  </section>
+
+  <footer class="rodape">
+    <p class="titulo">Siga a <b>Onça</b> nas redes</p>
+    <div class="redes">
+      <a href="https://www.instagram.com/onca.pintadaoficial/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.9c-.1-1.6-.4-3-1.6-4.2S17.7 2.2 16.1 2.1C14.5 2 9.5 2 7.9 2.1 6.3 2.2 4.9 2.5 3.7 3.7S2.2 6.3 2.1 7.9C2 9.5 2 14.5 2.1 16.1c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.6.1 8.2 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.6 0-8.2zm-2.1 10a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7A3.2 3.2 0 0 1 6.6 4.7c1.3-.5 4.3-.4 5.7-.4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7z"/></svg></a>
+      <a href="https://www.tiktok.com/@lojaoncapintadaa" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.4a2.9 2.9 0 1 1-2-2.7V9.2a6.3 6.3 0 1 0 5.4 6.2V8.6a8.2 8.2 0 0 0 4.8 1.5V6.8l-1-.1z"/></svg></a>
+      <a href="https://wa.me/5561998105050" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+    </div>
+    <p class="credito">Desenvolvido por <a href="https://www.instagram.com/astera.cco">Astera SM ✦</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
