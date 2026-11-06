@@ -6,6 +6,7 @@
 <title>Onça Pintada | Links</title>
 <meta name="description" content="Onça Pintada — moda feminina. Selvagem na essência, elegante na atitude.">
 <link rel="icon" href="img/favicon.png">
+<link rel="preload" as="image" href="img/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +16,8 @@
     --creme:#F6F1E7; --areia:#E9DFCB; --texto:#1A1612;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(11,11,11,.72),rgba(11,11,11,.72)),url(img/pele-onca.jpg) center/cover no-repeat}
+  body::before{content:'';position:fixed;inset:0;z-index:-1;background:#0B0B0B}
+  @media (min-width:600px){body::before{background:linear-gradient(rgba(11,11,11,.72),rgba(11,11,11,.72)),url(img/pele-onca.webp) center/cover no-repeat}}
   body{background:#0B0B0B;font-family:Montserrat,sans-serif;color:var(--texto);min-height:100vh;display:flex;justify-content:center}
   .pagina{width:100%;max-width:440px;background:var(--creme);box-shadow:0 0 40px rgba(0,0,0,.5)}
   a{text-decoration:none}
@@ -25,7 +27,7 @@
   .ponto{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--ouro)}
   .p1{top:14px;left:14px}.p2{top:14px;right:14px}.p3{bottom:14px;left:14px}.p4{bottom:14px;right:14px}
   .local{font-size:9px;letter-spacing:.22em;color:var(--ouro);text-transform:uppercase;margin-bottom:18px}
-  .logo{width:78%;max-width:300px;display:block;margin:0 auto 14px}
+  .logo{width:78%;height:auto;max-width:300px;display:block;margin:0 auto 14px}
   .slogan{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#e8ddc0;margin-bottom:26px}
   .btn{display:block;width:100%;padding:14px 10px;margin:10px 0;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;text-align:center;transition:.2s}
   .btn-ouro{background:var(--ouro);color:var(--preto)}
@@ -37,12 +39,12 @@
   .vendas .txt{flex:1}
   .vendas h2{font-family:Cinzel,serif;font-weight:400;font-size:22px;line-height:1.15;color:var(--ouro);letter-spacing:.04em;margin-bottom:8px}
   .vendas p{font-size:11.5px;line-height:1.55;color:#cfc6b3;margin-bottom:14px}
-  .vendas .simbolo{width:92px;flex-shrink:0;opacity:.95}
+  .vendas .simbolo{width:92px;height:auto;flex-shrink:0;opacity:.95}
   .zap{display:flex;align-items:center;gap:10px;background:var(--creme);color:var(--preto);padding:10px 12px;margin:8px 0;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
   .zap svg{width:16px;height:16px;flex-shrink:0}
 
   /* faixa da pele */
-  .pele{background:url(img/pele-onca.jpg) center/cover;padding:30px 34px;position:relative}
+  .pele{background:#3a2c1c url(img/pele-onca.webp) center/cover;padding:30px 34px;position:relative}
   .pele .btn-pele{display:block;background:rgba(246,241,231,.94);border:1px solid var(--preto);color:var(--preto);text-align:center;padding:13px 10px;margin:12px 0;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
 
   /* frete */
@@ -97,7 +99,7 @@
   <section class="topo">
     <span class="ponto p1"></span><span class="ponto p2"></span><span class="ponto p3"></span><span class="ponto p4"></span>
     <p class="local">Moda feminina &bull; Estilo &bull; Personalidade</p>
-    <img class="logo" src="img/logo.png" alt="Onça Pintada">
+    <img class="logo" src="img/logo.webp" width="800" height="278" alt="Onça Pintada" fetchpriority="high">
     <p class="slogan">Selvagem na essência, elegante na atitude.</p>
     <a class="btn btn-ouro" href="https://www.oncapintadaoficial.com.br">Compre no site</a>
     <a class="btn btn-linha" href="https://www.instagram.com/onca.pintadaoficial/">Instagram</a>
@@ -113,7 +115,7 @@
       <a class="zap" href="https://wa.me/5561992224423?text=Oi!%20Vim%20pelo%20Instagram%20da%20On%C3%A7a%20Pintada%20%F0%9F%90%86"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Gaby Alves</a>
       <a class="zap" href="https://wa.me/5561998105050?text=Oi!%20Vim%20pelo%20Instagram%20da%20On%C3%A7a%20Pintada%20%F0%9F%90%86"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Rafael</a>
     </div>
-    <img class="simbolo" src="img/simbolo.png" alt="">
+    <img class="simbolo" src="img/simbolo.webp" width="200" height="186" alt="" loading="lazy" decoding="async">
   </section>
 
   <section class="pele">
